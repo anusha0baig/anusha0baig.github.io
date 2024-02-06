@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Anusha Baig Personal Portfolio</title>
+<style>
+body { background-color: #F9F0FE;
+ color: #5B3256; } /* Choose a background color */
+h1 { background-color: #833B83;
+ color: #F9F0FE; 
+ font-size: 24pt;}
+h2 { background-color: #AD77C3;
+ color: #F9F0FE; 
+ font-size: 20pt;}
+ h3 { background-color: #c0a1cd;
+    color: #F9F0FE; 
+    font-size: 16pt;}
+</style>
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: #080808; /* Choose a foreground color */
+    margin: 15pt; /* Choose a margin greater than 10pt for all 4 sides */
+}
+
+p {
+    font-size: 14pt;
+    color: #666; 
+    font-family: Georgia, 'Times New Roman', Times, serif;/* Choose a color for paragraphs */
+}
+
+a {
+    text-decoration: none; /* Remove default underline */
+    color: #007bff; /* Choose a color for non-visited links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff5722; /* Choose a color for hover */
+}
+
+a:active {
+    color: #4caf50; /* Choose a color for active link */
+}
+
+a:visited {
+    color: #1b7acd; /* Choose a color for visited links */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.text-container {
+    width: 50%; /
+}
+
+.link-container {
+    width: 50%; /
+}
+
+<div class="text-container">
+    <h2>https://www.linkedin.com/in/anusha-baig/</h2>
+    <p>The following is a link to my LinkedIn. Feel free to connect!</p>
+</div>
+
+<div class="link-container">
+    <h2>https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:582577ab-e0e1-40b1-8be4-22f15288c48d</h2>
+    <p>This is a link to my current resume.</p>
+</div>
+</html>
