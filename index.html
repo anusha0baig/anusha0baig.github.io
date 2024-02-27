@@ -4,11 +4,29 @@
     <meta charset="utf-8">
     <title>Anusha Baig Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
 
     <h1>Anusha Baig</h1>
     <p>Welcome to my personal portfolio! From here you can view my education, work experience, and extracurriculars.</p>
+    <script src="main.js"></script>
+    <div class="navContainer">
+        <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+            <a href="page1.html">Education</a> <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+            <a href="page2.html">Experience</a> <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+            <a href="#">Projects</a>
+    </div>
+</body>
+
+</html>
+<!-- Putting in the user's name -->
+<button onclick="promptForName()">Type Your Name</button>
+<p id="outputName"></p>
+
+<!-- Clickable image -->
+<img src="Downloads/Snapchat-1805152574.jpg" alt="Your Image" onclick="enlargeImage()" id="normalImage">
+<img src="Downloads/Snapchat-1805152574.jpg" alt="Your Image" onclick="shrinkImage()" id="enlargedImage">
 
     <h2>Education</h2>
     <h3>Toronto Metropolitan University</h3>
@@ -36,6 +54,36 @@
         <h2><a href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:582577ab-e0e1-40b1-8be4-22f15288c48d" target="_blank">Resume</a></h2>
         <p>This is a link to my current resume.</p>
     </div>
-    <script src="main.js"></script>
+
+
+<script src="script.js"></script> <!-- Link to your separate JavaScript file -->
+
 </body>
 </html>
+script.js:
+
+javascript
+Copy code
+// JavaScript functions
+function promptForName() {
+let name = prompt("Please enter your name:");
+document.getElementById("outputName").innerText = "Hello, " + name + "!";
+}
+
+function enlargeImage() {
+document.getElementById("normalImage").style.display = "none";
+document.getElementById("enlargedImage").style.display = "inline";
+}
+
+function shrinkImage() {
+document.getElementById("normalImage").style.display = "inline";
+document.getElementById("enlargedImage").style.display = "none";
+}
+
+function highlightNavItem(navItem) {
+navItem.style.color = "blue";
+}
+
+function unhighlightNavItem(navItem) {
+navItem.style.color = "black";
+}

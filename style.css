@@ -23,7 +23,7 @@ h3 {
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 12pt;
+    font-size: 10pt;
     color: #080808;
     margin: 15pt;
 }
@@ -68,4 +68,12 @@ td {
 
 .link-container {
     width: 50%;
+}
+#enlargedImage {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+.navItem {
+    margin: 0 10px;
+    cursor: pointer;
 }
