@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Anusha Baig Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
 </head>
+    
 <body>
 
     <h1>Anusha Baig</h1>
@@ -13,13 +14,16 @@
     <script src="main.js"></script>
     <div class="navContainer">
         <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
-            <a href="page1.html">Education</a> <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
-            <a href="page2.html">Experience</a> <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+            <a href="page1.html">Education</a>
+        </div>
+        <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+            <a href="page2.html">Experience</a>
+        </div>
+        <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
             <a href="#">Projects</a>
+        </div>
     </div>
-</body>
 
-</html>
 <!-- Putting in the user's name -->
 <button onclick="promptForName()">Type Your Name</button>
 <p id="outputName"></p>
@@ -27,6 +31,120 @@
 <!-- Clickable image -->
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="enlargeImage()" id="normalImage">
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="shrinkImage()" id="enlargedImage">
+
+<!--Creating the form-->
+<div class="container">
+    <form id="userForm">
+        <label for="device">What device do you usually use to access web pages?</label>
+        <select id="device" name="device" required>
+            <option value="mobile">Mobile / Smart Phone</option>
+            <option value="laptop">Laptop / Desktop</option>
+            <option value="notTypical">I don't typically access web pages</option>
+        </select>
+
+        <label for="industry">What industry do you work in?</label>
+        <input type="text" id="industry" name="industry" required>
+
+        <label for="rating">On a scale of 1-5, please rate the importance of the following factors/sections when evaluating a potential hire's personal website:</label>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"About Me"</td>
+                    <td><input type="radio" name="aboutMe" value="1"></td>
+                    <td><input type="radio" name="aboutMe" value="2"></td>
+                    <td><input type="radio" name="aboutMe" value="3"></td>
+                    <td><input type="radio" name="aboutMe" value="4"></td>
+                    <td><input type="radio" name="aboutMe" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Education"</td>
+                    <td><input type="radio" name="education" value="1"></td>
+                    <td><input type="radio" name="education" value="2"></td>
+                    <td><input type="radio" name="education" value="3"></td>
+                    <td><input type="radio" name="education" value="4"></td>
+                    <td><input type="radio" name="education" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Work Experience"</td>
+                    <td><input type="radio" name="workExperience" value="1"></td>
+                    <td><input type="radio" name="workExperience" value="2"></td>
+                    <td><input type="radio" name="workExperience" value="3"></td>
+                    <td><input type="radio" name="workExperience" value="4"></td>
+                    <td><input type="radio" name="workExperience" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Resume"</td>
+                    <td><input type="radio" name="resume" value="1"></td>
+                    <td><input type="radio" name="resume" value="2"></td>
+                    <td><input type="radio" name="resume" value="3"></td>
+                    <td><input type="radio" name="resume" value="4"></td>
+                    <td><input type="radio" name="resume" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Projects"</td>
+                    <td><input type="radio" name="projects" value="1"></td>
+                    <td><input type="radio" name="projects" value="2"></td>
+                    <td><input type="radio" name="projects" value="3"></td>
+                    <td><input type="radio" name="projects" value="4"></td>
+                    <td><input type="radio" name="projects" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Key Skilss"</td>
+                    <td><input type="radio" name="keySkills" value="1"></td>
+                    <td><input type="radio" name="keySkills" value="2"></td>
+                    <td><input type="radio" name="keySkills" value="3"></td>
+                    <td><input type="radio" name="keySkills" value="4"></td>
+                    <td><input type="radio" name="keySkills" value="5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <label for="headshot">On a scale of 1 to 5, how much do you think including a headshot or professional picture contributes to the overall appeal and user experience of a portfolio website?</label>
+        <div>
+            <input type="radio" id="headshot1" name="headshot" value="1">
+            <label for="headshot1">1</label>
+
+            <!-- Repeat similar input elements for other options -->
+        </div>
+
+        <label for="aesthetics">In terms of aesthetics, what do you usually prefer?</label>
+        <select id="aesthetics" name="aesthetics" required>
+            <option value="minimalist">Minimalist Design (neutral colors, clean layout, etc.)</option>
+            <option value="bold">Bold and Colorful (bright colors, moving visuals, etc.)</option>
+        </select>
+
+        <label for="hiringDecisions">How likely are you to make hiring decisions based on personal websites?</label>
+        <input type="range" id="hiringDecisions" name="hiringDecisions" min="1" max="5" step="1">
+
+        <label for="reviewTime">How much time do you usually spend reviewing a candidate's profile?</label>
+        <select id="reviewTime" name="reviewTime" required>
+            <option value="1-3">1-3 minutes</option>
+            <option value="4-9">4-9 minutes</option>
+            <option value="10+">10+ minutes</option>
+        </select>
+
+        <label for="portfolioElements">In your opinion, what elements make a portfolio's "Projects" or "Work" section stand out? (Select all that apply)</label>
+        <input type="checkbox" id="clearDescriptions" name="portfolioElements" value="clearDescriptions">
+        <label for="clearDescriptions">Clear project descriptions</label>
+
+        <!-- Repeat similar input elements for other options -->
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="clearForm()">Clear/Reset</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
 
     <h2>Education</h2>
     <h3>Toronto Metropolitan University</h3>

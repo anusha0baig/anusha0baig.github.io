@@ -3,7 +3,7 @@ function promptForName() {
     document.getElementById("outputName").innerText = "Hello, " + name + "!";
 }
 
-function enlargeImage() {
+function enlargedImage() {
     document.getElementById("Snapchat-1805152574").style.display = "none";
     document.getElementById("enlargedImage").style.display = "inline";
 }

@@ -1,3 +1,25 @@
+.container {
+    clear: both; /* Add this to clear floats */
+}
+
+#normalImage, #enlargedImage {
+    float: right; /* Keep the images floated to the right */
+}
+
+#normalImage {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 50%; /* Create a circular shape */
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+#enlargedImage {
+    display: none;
+}
+
 body {
     background-color: #F9F0FE;
     color: #5B3256;
@@ -29,7 +51,7 @@ body {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 10pt;
     color: #666;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -77,3 +99,11 @@ td {
     margin: 0 10px;
     cursor: pointer;
 }
+
+/* Add this style to force labels on a new line */
+#userForm label {
+    display: block;
+    margin-bottom: 10px; /* Add margin for spacing between questions */
+}
+
+/* Other existing styles */
