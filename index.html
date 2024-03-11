@@ -28,6 +28,17 @@
 <button onclick="promptForName()">Type Your Name</button>
 <p id="outputName"></p>
 
+<!--Links to LinkedIn and Resume-->
+<div class="text-container">
+    <h2><a href="https://www.linkedin.com/in/anusha-baig/" target="_blank">LinkedIn</a></h2>
+    <p>The following is a link to my LinkedIn. Feel free to connect!</p>
+</div>
+
+<div class="link-container">
+    <h2><a href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:582577ab-e0e1-40b1-8be4-22f15288c48d" target="_blank">Resume</a></h2>
+    <p>This is a link to my current resume.</p>
+</div>
+
 <!-- Clickable image -->
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="enlargeImage()" id="normalImage">
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="shrinkImage()" id="enlargedImage">
@@ -35,16 +46,17 @@
 <!--Creating the form-->
 <div class="container">
     <form id="userForm">
+        <!--Form element 1: Drop down option-->
         <label for="device">What device do you usually use to access web pages?</label>
         <select id="device" name="device" required>
             <option value="mobile">Mobile / Smart Phone</option>
             <option value="laptop">Laptop / Desktop</option>
             <option value="notTypical">I don't typically access web pages</option>
         </select>
-
+<!--Form element 2: Text answer-->
         <label for="industry">What industry do you work in?</label>
         <input type="text" id="industry" name="industry" required>
-
+<!--Form element 3: radio buttons-->
         <label for="rating">On a scale of 1-5, please rate the importance of the following factors/sections when evaluating a potential hire's personal website:</label>
         <table>
             <thead>
@@ -99,7 +111,7 @@
                     <td><input type="radio" name="projects" value="5"></td>
                 </tr>
                 <tr>
-                    <td>"Key Skilss"</td>
+                    <td>"Key Skills"</td>
                     <td><input type="radio" name="keySkills" value="1"></td>
                     <td><input type="radio" name="keySkills" value="2"></td>
                     <td><input type="radio" name="keySkills" value="3"></td>
@@ -109,20 +121,32 @@
             </tbody>
         </table>
 
-        <label for="headshot">On a scale of 1 to 5, how much do you think including a headshot or professional picture contributes to the overall appeal and user experience of a portfolio website?</label>
+        <!--Element3: radio buttons for survey-->
+        <label for="headshot">On a scale of 1 to 5, how much do you think including a headshot or professional picture contributes to the overall appeal and user experience of a portfolio website? (1: not important; 5: very important)</label>
         <div>
             <input type="radio" id="headshot1" name="headshot" value="1">
             <label for="headshot1">1</label>
+            <input type="radio" id="headshot2" name="headshot" value="2">
+            <label for="headshot2">2</label>
+            <input type="radio" id="headshot3" name="headshot" value="3">
+            <label for="headshot3">3</label>
+            <input type="radio" id="headshot4" name="headshot" value="4">
+            <label for="headshot4">4</label>
+            <input type="radio" id="headshot5" name="headshot" value="5">
+            <label for="headshot5">5</label>
 
-            <!-- Repeat similar input elements for other options -->
         </div>
-
-        <label for="aesthetics">In terms of aesthetics, what do you usually prefer?</label>
-        <select id="aesthetics" name="aesthetics" required>
-            <option value="minimalist">Minimalist Design (neutral colors, clean layout, etc.)</option>
-            <option value="bold">Bold and Colorful (bright colors, moving visuals, etc.)</option>
-        </select>
-
+<!--Form element 4: checkboxes again and fieldset element-->
+        <fieldset>
+            <legend>In terms of aesthetics, what do you usually prefer?</legend>
+            
+            <input type="checkbox" id="minimalist" name="aesthetics" value="minimalist">
+            <label for="minimalist">Minimalist Design (neutral colors, clean layout, etc.)</label>
+        
+            <input type="checkbox" id="bold" name="aesthetics" value="bold">
+            <label for="bold">Bold and Colorful (bright colors, moving visuals, etc.)</label>
+        </fieldset>
+<!--Element 5 :Slider-->
         <label for="hiringDecisions">How likely are you to make hiring decisions based on personal websites?</label>
         <input type="range" id="hiringDecisions" name="hiringDecisions" min="1" max="5" step="1">
 
@@ -137,10 +161,14 @@
         <input type="checkbox" id="clearDescriptions" name="portfolioElements" value="clearDescriptions">
         <label for="clearDescriptions">Clear project descriptions</label>
 
-        <!-- Repeat similar input elements for other options -->
+        <!--Element 6: multiple text field-->
+        Additional comments:<br>
+<textarea name="cm" id="cm" cols="40" rows="2">Enter comments</textarea>
 
+<!--Element 7&8: Submit and Clear buttons-->
         <button type="button" onclick="submitForm()">Submit</button>
         <button type="button" onclick="clearForm()">Clear/Reset</button>
+
     </form>
 </div>
 
@@ -162,17 +190,6 @@
     <p>ITM750: Project Management
         This course was particularly useful to me as it equipped me with a comprehensive understanding of the tools and techniques crucial for successful project management in the realm of IT-enabled process improvement projects. The course delved into project planning, scheduling, budgeting, human resources, quality assurance, procurement, communication, and risk management. The skills cultivated throughout this course, particularly in organizational and planning domains, have proven to be highly transferable, extending their impact beyond the confines of IT projects. These acquired competencies not only enhance my efficacy in professional settings but also permeate various aspects of my personal life, providing a valuable foundation for tackling diverse challenges with strategic foresight and efficiency.
     </p>
-
-    <div class="text-container">
-        <h2><a href="https://www.linkedin.com/in/anusha-baig/" target="_blank">LinkedIn</a></h2>
-        <p>The following is a link to my LinkedIn. Feel free to connect!</p>
-    </div>
-
-    <div class="link-container">
-        <h2><a href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:582577ab-e0e1-40b1-8be4-22f15288c48d" target="_blank">Resume</a></h2>
-        <p>This is a link to my current resume.</p>
-    </div>
-
 
 <script src="script.js"></script> <!-- Link to your separate JavaScript file -->
 
