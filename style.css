@@ -2,6 +2,12 @@
     clear: both; /* Add this to clear floats */
 }
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #normalImage, #enlargedImage {
     float: right; /* Keep the image floated to the right */
 }
@@ -20,6 +26,7 @@
     display: none;
 }
 
+/* header colours */
 body {
     background-color: #F9F0FE;
     color: #5B3256;
@@ -84,6 +91,7 @@ td {
     padding: 10px;
 }
 
+/* styling for my links */
 .text-container {
     float: left;
     width: 50%;
@@ -101,6 +109,11 @@ td {
     margin-bottom: 0px;
 }
 
+.education-section {
+    width: 100%; 
+    clear: both;
+}
+
 .navItem {
     margin: 0 10 px;
     cursor: pointer; 
@@ -108,7 +121,5 @@ td {
 
 #userForm label {
     display: block;
-    margin-bottom: 10px; /* Add margin for spacing between questions */
+    margin-bottom: 10px; /*spacing between questions*/
 }
-
-/* Other existing styles */

@@ -20,3 +20,15 @@ function highlightNavItem(navItem) {
 function unhighlightNavItem(navItem) {
     navItem.style.color = "black";
 }
+
+function submitForm() {
+    // Add logic to handle form submission
+    console.log("Form submitted");
+}
+
+function clearForm() {
+    // Add logic to clear form fields
+    console.log("Form cleared");
+
+document.getElementById("userForm").reset();
+}

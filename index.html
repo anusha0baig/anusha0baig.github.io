@@ -40,10 +40,34 @@
 </div>
 
 <!-- Clickable image -->
+<div>
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="enlargeImage()" id="normalImage">
 <img src="subdirectory/Snapchat-1805152574.jpg" alt="Your Image" onclick="shrinkImage()" id="enlargedImage">
+</div>
 
-<!--Creating the form-->
+<div>
+    <div class="education-section">
+    <h2>Education</h2>
+    <h3>Toronto Metropolitan University</h3>
+    <h4>Bachelor of Commerce, Business Technology Management</h4>
+    <p>Business Technology Management is an interdisciplinary field that integrates business and technology to help organizations achieve their strategic objectives. The program usually covers a range of topics related to business processes, information technology, project management, and strategic planning.</p>
+    <p>- Member of TedxRyerson General Member</p>
+    <p>- Case Buddy for a Consulting Program</p>
+    <p>- Power of Excel Bootcamp</p>
+
+    <h3>Notre Dame Catholic Secondary School</h3>
+    <h4>Ontario Secondary School Diploma</h4>
+    <p>Obtaining my Ontario Secondary School Diploma (OSSD) was a significant milestone in my educational journey. Throughout my high school years, I engaged in a diverse range of subjects to meet the rigorous requirements for the OSSD. My studies included Biology, Physics, Advanced Functions, Calculus, and English, reflecting a well-rounded academic experience. Gained Honors Roll, World Issues Club Member</p>
+
+    <h3>Notable Coursework</h3>
+    <p>ITM750: Project Management
+        This course was particularly useful to me as it equipped me with a comprehensive understanding of the tools and techniques crucial for successful project management in the realm of IT-enabled process improvement projects. The course delved into project planning, scheduling, budgeting, human resources, quality assurance, procurement, communication, and risk management. The skills cultivated throughout this course, particularly in organizational and planning domains, have proven to be highly transferable, extending their impact beyond the confines of IT projects. These acquired competencies not only enhance my efficacy in professional settings but also permeate various aspects of my personal life, providing a valuable foundation for tackling diverse challenges with strategic foresight and efficiency.
+    </p>
+
+    <h3>Help me improve my website by filling out the form below.</h3>
+</div>
+
+    <!--Creating the form-->
 <div class="container">
     <form id="userForm">
         <!--Form element 1: Drop down option-->
@@ -160,6 +184,14 @@
         <label for="portfolioElements">In your opinion, what elements make a portfolio's "Projects" or "Work" section stand out? (Select all that apply)</label>
         <input type="checkbox" id="clearDescriptions" name="portfolioElements" value="clearDescriptions">
         <label for="clearDescriptions">Clear project descriptions</label>
+        <input type="checkbox" id="RelevantSkills" name="portfolioElements" value="RelevantSkills">
+        <label for="RelevantSkills">Demonstrated skills relevant to the job</label>
+        <input type="checkbox" id="projectType" name="portfolioElements" value="projectType">
+        <label for="projectType">Variety of project types</label>
+        <input type="checkbox" id="problemSolving" name="portfolioElements" value="problemSolving">
+        <label for="problemSolving">Showcasing the problem-solving process</label>
+        <input type="checkbox" id="visual" name="portfolioElements" value="visual">
+        <label for="visual">High-quality visuals or samples</label>
 
         <!--Element 6: multiple text field-->
         Additional comments:<br>
@@ -170,28 +202,5 @@
         <button type="button" onclick="clearForm()">Clear/Reset</button>
 
     </form>
-</div>
-
-<script src="script.js"></script>
-
-    <h2>Education</h2>
-    <h3>Toronto Metropolitan University</h3>
-    <h4>Bachelor of Commerce, Business Technology Management</h4>
-    <p>Business Technology Management is an interdisciplinary field that integrates business and technology to help organizations achieve their strategic objectives. The program usually covers a range of topics related to business processes, information technology, project management, and strategic planning.</p>
-    <p>- Member of TedxRyerson General Member</p>
-    <p>- Case Buddy for a Consulting Program</p>
-    <p>- Power of Excel Bootcamp</p>
-
-    <h3>Notre Dame Catholic Secondary School</h3>
-    <h4>Ontario Secondary School Diploma</h4>
-    <p>Obtaining my Ontario Secondary School Diploma (OSSD) was a significant milestone in my educational journey. Throughout my high school years, I engaged in a diverse range of subjects to meet the rigorous requirements for the OSSD. My studies included Biology, Physics, Advanced Functions, Calculus, and English, reflecting a well-rounded academic experience. Gained Honors Roll, World Issues Club Member</p>
-
-    <h3>Notable Coursework</h3>
-    <p>ITM750: Project Management
-        This course was particularly useful to me as it equipped me with a comprehensive understanding of the tools and techniques crucial for successful project management in the realm of IT-enabled process improvement projects. The course delved into project planning, scheduling, budgeting, human resources, quality assurance, procurement, communication, and risk management. The skills cultivated throughout this course, particularly in organizational and planning domains, have proven to be highly transferable, extending their impact beyond the confines of IT projects. These acquired competencies not only enhance my efficacy in professional settings but also permeate various aspects of my personal life, providing a valuable foundation for tackling diverse challenges with strategic foresight and efficiency.
-    </p>
-
-<script src="script.js"></script> <!-- Link to your separate JavaScript file -->
-
 </body>
 </html>
