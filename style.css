@@ -1,5 +1,38 @@
+/* Adjust the positioning and spacing of the navigation links (the 4 headers)*/
+.navContainer {
+    float: right; /* Float the navigation container to the right */
+    margin: 10px; /* Add margin for spacing */
+}
+
+.navItem {
+    margin-right: 20px; /* Add margin between navigation items for spacing */
+    cursor: pointer; 
+    display: inline-block; /* Make the navigation items appear in one line */
+    font-size: 16px;
+}
+
+.navItem:last-child {
+    margin-right: 0; /* Remove margin from the last navigation item to prevent extra space */
+}
+
+.navItem {
+    margin: 10px;
+    cursor: pointer; 
+}
+
+/* This is so that the header title stays below my 3 navigation links */
+h1 {
+    clear: both; /* Clear any floats */
+    margin-top: 20px; /* Add space between the navigation links and the main page name */
+}
+
+/* all of the .container info is for my Form */
 .container {
     clear: both; /* Add this to clear floats */
+}
+
+.container div{
+    margin-bottom: 20px; /* Add margin between each row */
 }
 
 .container::after {
@@ -8,18 +41,20 @@
     clear: both;
 }
 
+/* Keep the image of self floated to the right */
 #normalImage, #enlargedImage {
-    float: right; /* Keep the image floated to the right */
+    float: right; 
 }
 
 #normalImage {
-    width: 300px; /* width */
-    height: 300px; /* height*/
+    width: 400px; /* width */
+    height: 400px; /* height*/
     border-radius: 50%; /* Create a circular shape */
     display: block;
     margin: 10px;
     cursor: pointer;
     float: right;
+    margin-top: -50px; 
 }
 
 #enlargedImage {
@@ -28,25 +63,25 @@
 
 /* header colours */
 body {
-    background-color: #F9F0FE;
-    color: #5B3256;
+    background-color: #fbf8fc;
+    color: #944f8f;
 }
 
 h1 {
-    background-color: #833B83;
-    color: #F9F0FE;
-    font-size: 24pt;
+    background-color: #efb6db;
+    color: #040404;
+    font-size: 35pt;
 }
 
 h2 {
-    background-color: #AD77C3;
+    background-color: #efb6db;
     color: #F9F0FE;
     font-size: 20pt;
 }
 
 h3 {
-    background-color: #c0a1cd;
-    color: #F9F0FE;
+    background-color: #efe9f2;
+    color: #0d0c0d;
     font-size: 16pt;
 }
 
@@ -109,17 +144,37 @@ td {
     margin-bottom: 0px;
 }
 
-.education-section {
-    width: 100%; 
-    clear: both;
+/* Styling for the accessibility buttons */
+.font-buttons {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Align buttons horizontally at the center */
+    align-items: center; /* Align buttons vertically at the center */
 }
 
-.navItem {
-    margin: 0 10 px;
-    cursor: pointer; 
+.font-buttons button {
+    margin: 0 5px; /* Add margin between buttons */
 }
 
-#userForm label {
-    display: block;
-    margin-bottom: 10px; /*spacing between questions*/
+.color-theme {
+    position: fixed;
+    bottom: 10px;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-top: 10px; /* Add margin between font buttons and color theme button */
+}
+
+/* Colour changing accessibility*/
+/* Default light theme styles */
+body {
+    /* Default background color, text color, etc. */
+}
+
+body.dark-theme {
+    background-color: #222; /* Example dark background color */
+    color: #ffffff; 
+    /* Add any other dark theme styles */ 
 }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Page</title>
+    <!-- Link your CSS file if needed -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <!--Links to my webpages-->
+        <div class="navContainer">
+            <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+                <a href="page1.html">Education</a>
+            </div>
+            <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+                <a href="page2.html">Experience</a>
+            </div>
+            <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+                <a href="page3.html">Projects</a>
+            </div>
+                <div class="navItem" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">
+                <a href="forms.html">Form</a>
+                </div>
+        </div>
+    <h1>Forms Page</h1>
+    <h3>Help me improve my website by filling out the form below.</h3>
+</div>
+    <!--Creating the form-->
+<div class="container">
+    <form id="userForm">
+        <!--Form element 1: Drop down option-->
+        <div>
+        <label for="device">What device do you usually use to access web pages?</label>
+        <select id="device" name="device" required>
+            <option value="mobile">Mobile / Smart Phone</option>
+            <option value="laptop">Laptop / Desktop</option>
+            <option value="notTypical">I don't typically access web pages</option>
+        </select>
+    </div>
+<!--Form element 2: Text answer-->
+        <div>
+        <label for="industry">What industry do you work in?</label>
+        <input type="text" id="industry" name="industry" required>
+    </div>
+<!--Form element 3: radio buttons-->
+        <div>
+        <label for="rating">On a scale of 1-5, please rate the importance of the following factors/sections when evaluating a potential hire's personal website:</label>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"About Me"</td>
+                    <td><input type="radio" name="aboutMe" value="1"></td>
+                    <td><input type="radio" name="aboutMe" value="2"></td>
+                    <td><input type="radio" name="aboutMe" value="3"></td>
+                    <td><input type="radio" name="aboutMe" value="4"></td>
+                    <td><input type="radio" name="aboutMe" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Education"</td>
+                    <td><input type="radio" name="education" value="1"></td>
+                    <td><input type="radio" name="education" value="2"></td>
+                    <td><input type="radio" name="education" value="3"></td>
+                    <td><input type="radio" name="education" value="4"></td>
+                    <td><input type="radio" name="education" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Work Experience"</td>
+                    <td><input type="radio" name="workExperience" value="1"></td>
+                    <td><input type="radio" name="workExperience" value="2"></td>
+                    <td><input type="radio" name="workExperience" value="3"></td>
+                    <td><input type="radio" name="workExperience" value="4"></td>
+                    <td><input type="radio" name="workExperience" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Resume"</td>
+                    <td><input type="radio" name="resume" value="1"></td>
+                    <td><input type="radio" name="resume" value="2"></td>
+                    <td><input type="radio" name="resume" value="3"></td>
+                    <td><input type="radio" name="resume" value="4"></td>
+                    <td><input type="radio" name="resume" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Projects"</td>
+                    <td><input type="radio" name="projects" value="1"></td>
+                    <td><input type="radio" name="projects" value="2"></td>
+                    <td><input type="radio" name="projects" value="3"></td>
+                    <td><input type="radio" name="projects" value="4"></td>
+                    <td><input type="radio" name="projects" value="5"></td>
+                </tr>
+                <tr>
+                    <td>"Key Skills"</td>
+                    <td><input type="radio" name="keySkills" value="1"></td>
+                    <td><input type="radio" name="keySkills" value="2"></td>
+                    <td><input type="radio" name="keySkills" value="3"></td>
+                    <td><input type="radio" name="keySkills" value="4"></td>
+                    <td><input type="radio" name="keySkills" value="5"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+        <!--Element3: radio buttons for survey-->
+        <div>
+        <label for="headshot">On a scale of 1 to 5, how much do you think including a headshot or professional picture contributes to the overall appeal and user experience of a portfolio website? (1: not important; 5: very important)</label>
+        <div>
+            <input type="radio" id="headshot1" name="headshot" value="1">
+            <label for="headshot1">1</label>
+            <input type="radio" id="headshot2" name="headshot" value="2">
+            <label for="headshot2">2</label>
+            <input type="radio" id="headshot3" name="headshot" value="3">
+            <label for="headshot3">3</label>
+            <input type="radio" id="headshot4" name="headshot" value="4">
+            <label for="headshot4">4</label>
+            <input type="radio" id="headshot5" name="headshot" value="5">
+            <label for="headshot5">5</label>
+        </div>
+<!--Form element 4: checkboxes again and fieldset element-->
+        <div>
+        <fieldset>
+            <legend>In terms of aesthetics, what do you usually prefer?</legend>
+           
+            <input type="checkbox" id="minimalist" name="aesthetics" value="minimalist">
+            <label for="minimalist">Minimalist Design (neutral colors, clean layout, etc.)</label>
+       
+            <input type="checkbox" id="bold" name="aesthetics" value="bold">
+            <label for="bold">Bold and Colorful (bright colors, moving visuals, etc.)</label>
+        </fieldset>
+    </div>
+<!--Element 5 :Slider-->
+        <div>
+        <label for="hiringDecisions">How likely are you to make hiring decisions based on personal websites?</label>
+        <input type="range" id="hiringDecisions" name="hiringDecisions" min="1" max="5" step="1">
+
+
+        <label for="reviewTime">How much time do you usually spend reviewing a candidate's profile?</label>
+        <select id="reviewTime" name="reviewTime" required>
+            <option value="1-3">1-3 minutes</option>
+            <option value="4-9">4-9 minutes</option>
+            <option value="10+">10+ minutes</option>
+        </select>
+
+
+        <label for="portfolioElements">In your opinion, what elements make a portfolio's "Projects" or "Work" section stand out? (Select all that apply)</label>
+        <input type="checkbox" id="clearDescriptions" name="portfolioElements" value="clearDescriptions">
+        <label for="clearDescriptions">Clear project descriptions</label>
+        <input type="checkbox" id="RelevantSkills" name="portfolioElements" value="RelevantSkills">
+        <label for="RelevantSkills">Demonstrated skills relevant to the job</label>
+        <input type="checkbox" id="projectType" name="portfolioElements" value="projectType">
+        <label for="projectType">Variety of project types</label>
+        <input type="checkbox" id="problemSolving" name="portfolioElements" value="problemSolving">
+        <label for="problemSolving">Showcasing the problem-solving process</label>
+        <input type="checkbox" id="visual" name="portfolioElements" value="visual">
+        <label for="visual">High-quality visuals or samples</label>
+    </div>
+
+        <!--Element 6: multiple text field-->
+        <div>
+        Additional comments:<br>
+    </div>
+<textarea name="cm" id="cm" cols="40" rows="2">Enter comments</textarea>
+
+
+<!--Element 7&8: Submit and Clear buttons-->
+        <div>
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="clearForm()">Clear/Reset</button>
+    </div>
+    </form>
+</body>
+</html>
+
+</body>
+</html>
